@@ -1,0 +1,33 @@
+.button {
+	border-radius: rem-calc(6);
+	padding: rem-calc(20 50);
+	height: rem-calc(60);
+	font-weight: 500;
+	font-size: rem-calc(16);
+
+	&--transparent-gray {
+		border: solid rem-calc(2) $color-mystic;
+		color: $color-regent-gray;
+		background-color: transparent;
+		transition: border-color $base-transition, color $base-transition, background-color $base-transition;
+
+		&:focus,
+		&:hover {
+			border-color: $color-mantis;
+			color: $color-white;
+			background-color: $color-mantis;
+		}
+	}
+
+	&--transparent-white {
+		border: solid rem-calc(2) rgba($color-white, 0.11);
+		color: $color-white;
+		background-color: rgba($color-white, 0.1);
+		transition: border-color $base-transition, color $base-transition, background-color $base-transition;
+
+		&:focus,
+		&:hover {
+			border-color: rgba($color-white, 0);
+		}
+	}
+}

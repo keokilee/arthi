@@ -1,0 +1,47 @@
+.side-bar {
+	padding: $vertical-gutter 0;
+	background: $color-mako;
+}
+
+.side-menu {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		padding: ($vertical-gutter / 2) $vertical-gutter;
+
+		a {
+			color: $color-white;
+
+			.icon {
+				max-width: $vertical-gutter * 1.5;
+				max-height: $vertical-gutter * 1.5;
+				fill: $color-mantis;
+			}
+		}
+	}
+}
+
+.side-social {
+	padding: $vertical-gutter;
+
+	a {
+		margin-right: $vertical-gutter;
+
+		.icon {
+			max-width: $vertical-gutter * 1.5;
+			max-height: $vertical-gutter * 1.5;
+			fill: $color-white;
+			transition: fill $base-transition;
+		}
+
+		&:hover {
+			.icon {
+				fill: $color-mantis;
+			}
+		}
+	}
+}

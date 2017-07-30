@@ -1,0 +1,361 @@
+.header-3 {
+	background: $color-white;
+
+	&__top {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: rem-calc(40 70 0 70);
+
+		&__hamburger {
+			@include hamburger($color-mako, $color-mako, rem-calc(20), rem-calc(14), rem-calc(2), 3);
+		}
+
+		&__button {
+			margin-bottom: 0;
+			border: solid rem-calc(2) rgba($color-curious-blue, 0.3);
+			padding: rem-calc(12 28);
+			height: rem-calc(42);
+			color: $color-curious-blue;
+			background-color: $color-white;
+
+			&:focus,
+			&:hover {
+				color: $color-white;
+				background-color: $color-curious-blue;
+			}
+		}
+	}
+
+	&__bottom {
+		padding: rem-calc(80 0 135 0);
+		text-align: center;
+
+		&__icon {
+			margin-bottom: $vertical-gutter * 2.7;
+			width: rem-calc(55);
+			height: rem-calc(44);
+		}
+
+		&__quote {
+			margin: 0 auto;
+			max-width: rem-calc(815);
+		}
+
+		&__button {
+			margin-top: rem-calc(60);
+			margin-bottom: rem-calc(0);
+			height: auto;
+			color: $color-white;
+			background-color: $color-curious-blue;
+
+			&:hover,
+			&:focus {
+				background-color: $color-blue-sky;
+			}
+		}
+	}
+
+	&__hamburger {
+		position: fixed;
+		left: rem-calc(0);
+		right: rem-calc(0);
+		top: rem-calc(0);
+		bottom: rem-calc(0);
+		z-index: 999;
+		display: flex;
+		padding-top: rem-calc(160);
+		background-color: $color-curious-blue;
+		opacity: 0;
+
+		&__container {
+			display: flex;
+			align-items: center;
+			flex-flow: column;
+			justify-content: space-between;
+		}
+
+		&__middle {
+			flex: 1 1 auto;
+			justify-content: flex-start;
+		}
+
+		&__logo {
+			display: flex;
+			flex: 0 0 auto;
+			justify-content: center;
+			margin-bottom: rem-calc(70);
+
+			&__svg {
+				width: rem-calc(55);
+				height: rem-calc(50);
+			}
+		}
+
+		&__list {
+			display: flex;
+			list-style: none;
+			margin: rem-calc(0 0 70 0);
+			padding: rem-calc(0);
+
+			&__item {
+				margin-right: rem-calc(100);
+
+				&__link {
+					font-weight: 300;
+					font-size: rem-calc(52);
+					line-height: rem-calc(65);
+					letter-spacing: rem-calc(-2);
+					color: $color-white;
+					transition: all linear $base-transition;
+
+					&:hover {
+						color: rgba($color-white, 0.55);
+						transition: all linear $base-transition;
+					}
+				}
+
+				&:last-child {
+					margin-right: rem-calc(0);
+				}
+			}
+		}
+
+		&__social {
+			margin-bottom: rem-calc(50);
+
+			&__list {
+				display: flex;
+				justify-content: center;
+				list-style: none;
+				margin: rem-calc(0);
+				padding: rem-calc(0);
+
+				&__item {
+					margin-right: rem-calc(50);
+
+					&__link {
+						font-weight: 500;
+						font-size: rem-calc(16);
+						line-height: rem-calc(16);
+						color: $color-white;
+						transition: all linear $base-transition;
+					}
+
+					&:last-child {
+						margin-right: rem-calc(0);
+					}
+				}
+			}
+		}
+
+		&__footer {
+			flex: 0 0 auto;
+			margin-bottom: rem-calc(40);
+			text-align: center;
+			color: rgba($color-white, 0.6);
+		}
+
+		&__close {
+			position: absolute;
+			left: rem-calc(70);
+			top: rem-calc(40);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: rem-calc(2) solid $color-white;
+			border-radius: 50%;
+			width: rem-calc(44);
+			height: rem-calc(44);
+			background-color: rgba($color-white, 0.1);
+			cursor: pointer;
+			transition: all linear $base-transition;
+
+			&__svg {
+				width: rem-calc(16);
+				height: rem-calc(16);
+				fill: $color-white;
+			}
+
+			&:hover {
+				border-color: transparent;
+				background-color: transparent;
+				opacity: 0.7;
+				transform: rotate(90deg);
+				transform-origin: 50% 50%;
+				transition: all linear $base-transition;
+			}
+
+			@include breakpoint(1024 down) {
+				left: rem-calc(20);
+			}
+
+			@include breakpoint(650 down) {
+				left: rem-calc(20);
+				top: rem-calc(40);
+			}
+		}
+
+		&__hire {
+			position: absolute;
+			right: rem-calc(70);
+			top: rem-calc(40);
+			border: rem-calc(2) solid rgba($color-white, 0.3);
+			border-radius: rem-calc(6);
+			padding: rem-calc(13 30);
+			font-weight: 500;
+			font-size: rem-calc(16);
+			line-height: rem-calc(16);
+			color: $color-white;
+			transition: all linear $base-transition;
+
+			&:hover {
+				color: $color-curious-blue;
+				background-color: $color-white;
+				transition: all linear $base-transition;
+			}
+		}
+
+		@include breakpoint(1024 down) {
+			&__list {
+				&__item {
+					margin-right: rem-calc(70);
+
+					&__link {
+						font-size: rem-calc(48);
+					}
+				}
+			}
+		}
+
+		@include breakpoint(768 down) {
+			&__list {
+				&__item {
+					&__link {
+						font-size: rem-calc(42);
+					}
+				}
+			}
+		}
+
+		@include breakpoint(650 down) {
+			padding-top: rem-calc(125);
+
+			&__container {
+				flex: 1 0 auto;
+				margin: rem-calc(0);
+				padding: rem-calc(0);
+			}
+
+			&__logo {
+				display: none;
+			}
+
+			&__list {
+				flex-flow: column;
+				margin-bottom: rem-calc(70);
+
+				&__item {
+					margin-right: rem-calc(0);
+					margin-bottom: rem-calc(32);
+					text-align: center;
+
+					&__link {
+						font-size: rem-calc(37);
+						line-height: rem-calc(44);
+					}
+
+					&:last-child {
+						margin-bottom: rem-calc(0);
+					}
+				}
+			}
+
+			&__social {
+				&__list {
+					&__item {
+						margin-right: rem-calc(35);
+					}
+				}
+			}
+
+			&__footer {
+				align-self: stretch;
+				margin-bottom: rem-calc(0);
+				border-top: rem-calc(1) solid rgba($color-white, 0.1);
+				padding-top: rem-calc(28);
+				padding-bottom: rem-calc(16);
+
+				&__title {
+					margin: rem-calc(0) auto;
+					max-width: rem-calc(233);
+				}
+			}
+
+			&__hire {
+				right: rem-calc(18);
+				top: rem-calc(19);
+			}
+		}
+	}
+
+	.hamburger-button {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: rem-calc(2) solid $color-shuttle-gray;
+		border-radius: 50%;
+		width: rem-calc(44);
+		height: rem-calc(44);
+		background-color: rgba($color-white, 0.1);
+		transition: all linear $base-transition;
+
+		svg {
+			width: rem-calc(20);
+			height: rem-calc(14);
+			fill: $color-shuttle-gray;
+		}
+
+		&:hover {
+			border-color: transparent;
+			background-color: transparent;
+			opacity: 0.7;
+			transform: scale(1.1);
+			transition: all linear $base-transition;
+		}
+	}
+
+	@include breakpoint(xlarge down) {
+		&__bottom {
+			padding-top: rem-calc(100);
+			padding-bottom: rem-calc(100);
+
+			&__quote {
+				margin: 0 auto;
+				padding: rem-calc(0 20 0 20);
+				max-width: rem-calc(815);
+			}
+		}
+	}
+
+	@include breakpoint(medium down) {
+		&__top {
+			padding-right: rem-calc(20);
+			padding-left: rem-calc(20);
+		}
+
+		&__bottom {
+			padding-top: rem-calc(80);
+			padding-bottom: rem-calc(80);
+		}
+	}
+
+	@include breakpoint(small down) {
+		&__bottom {
+			padding-top: rem-calc(60);
+			padding-bottom: rem-calc(60);
+		}
+	}
+}

@@ -1,0 +1,110 @@
+.textbox {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	&__input {
+		display: block;
+		margin: 0;
+		border: solid rem-calc(2) rgba($color-white, 0);
+		border-radius: rem-calc(6);
+		padding: rem-calc(20);
+		width: 100%;
+		height: rem-calc(60);
+		font-weight: 400;
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+		color: rgba($color-white, 0.7);
+		background-color: rgba($color-black, 0.1);
+		transition: border-color $base-transition, color $base-transition, background-color $base-transition;
+
+		&::placeholder {
+			color: rgba($color-white, 0.7);
+			opacity: 1;
+			transition: opacity $base-transition;
+		}
+
+		&::selection {
+			background-color: rgba($color-black, 0.5);
+		}
+
+		&:focus,
+		&:hover {
+			border-color: $color-white !important;
+			color: $color-white;
+			background-color: rgba($color-black, 0.1);
+		}
+
+		&:focus {
+			&::placeholder {
+				opacity: 0.4;
+			}
+		}
+
+		@at-root {
+			textarea#{&} {
+				resize: vertical;
+			}
+		}
+	}
+
+	&--password &__input {
+		padding-right: rem-calc(60);
+	}
+
+	&--password &__toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		outline: none;
+		border-radius: rem-calc(0 6 6 0);
+		width: rem-calc(55);
+		height: rem-calc(60);
+		background: none;
+		cursor: pointer;
+
+		&__icon {
+			position: absolute;
+			right: rem-calc(19);
+			top: 50%;
+			margin-top: rem-calc(-5.5);
+			width: rem-calc(22);
+			height: rem-calc(11);
+			fill: $color-white;
+			opacity: 0.4;
+			transition: opacity $base-transition;
+		}
+
+		&:focus &__icon,
+		&:hover &__icon {
+			opacity: 1;
+		}
+	}
+
+	&--password.is-password-visible &__toggle {
+		&__icon {
+			opacity: 1;
+		}
+	}
+
+	&--white &__input {
+		border-color: $color-mystic;
+		color: $color-regent-gray;
+		background-color: $color-white;
+
+		&::placeholder {
+			color: $color-regent-gray;
+		}
+
+		&::selection {
+			color: $color-white;
+		}
+
+		&:focus,
+		&:hover {
+			border-color: $color-loblolly !important;
+			color: $color-regent-gray;
+			background-color: $color-white;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+include ../../pug/mixins/mixins.pug
+header.header-3
+	.header-3__top(data-aos="fade-up")
+		a.header-3__button__hamburger.hamburger-button(href="#")
+			+svg('hamburger').header-3__button__hamburger__svg
+		a.header-3__top__button.button(href="#")
+			| Hire us
+	.header-3__bottom
+		div(data-aos="fade-up")
+			+svg('cube').header-3__bottom__icon
+		h2.header-3__bottom__quote.quote-1(data-aos="fade-up")
+			| We are a creative team based in Sweden. We specialise in art direction, design and branding
+		div(data-aos="fade-up")
+			a.header-3__bottom__button.button(href="#")
+				| Our Projects
+
+	.header-3__hamburger.is-hidden
+		.header-3__hamburger__container.container
+			.header-3__hamburger__logo
+				+svg('cube').header-3__hamburger__logo__svg
+
+			.header-3__hamburger__middle
+				.header-3__hamburger__menu
+					ul.header-3__hamburger__list
+						li.header-3__hamburger__list__item
+							a(href='#').header-3__hamburger__list__item__link.h1 Work
+						li.header-3__hamburger__list__item
+							a(href='#').header-3__hamburger__list__item__link Team
+						li.header-3__hamburger__list__item
+							a(href='#').header-3__hamburger__list__item__link Blog
+						li.header-3__hamburger__list__item
+							a(href='#').header-3__hamburger__list__item__link Contact
+				.header-3__hamburger__social
+					ul.header-3__hamburger__social__list
+						li.header-3__hamburger__social__list__item
+							a(href='#').header-3__hamburger__social__list__item__link
+								| Twitter
+						li.header-3__hamburger__social__list__item
+							a(href='#').header-3__hamburger__social__list__item__link
+								| Instagram
+						li.header-3__hamburger__social__list__item
+							a(href='#').header-3__hamburger__social__list__item__link
+								| Facebook
+
+			.header-3__hamburger__footer
+				.header-3__hamburger__footer__title
+					| GSST - Los Angeles • San Francisco • (650) 521-62233211, hello@gsst.com
+
+			.header-3__hamburger__close
+				+svg('cross').header-3__hamburger__close__svg
+			a(href='#').header-3__hamburger__hire
+				| Hire us

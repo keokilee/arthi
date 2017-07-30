@@ -1,0 +1,36 @@
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:svgjs="http://svgjs.com/svgjs"
+	width="68"
+	height="58"
+	viewBox="0 0 68 58">
+	<path
+		d="M406 4673H429.95L451.78 4711.09H427.92999999999995Z"
+		fill="#fccd38"
+		transform="matrix(1,0,0,1,-384,-4673)"/>
+	<path
+		d="M417.68 4693.5C409.54 4679.51 405.84000000000003 4673 405.84000000000003 4673C398.49 4685.57 384.00000000000006 4710.89 384.00000000000006 4710.89L395.9100000000001 4730.820000000001Z"
+		fill="#009b58"
+		transform="matrix(1,0,0,1,-384,-4673)"/>
+	<path
+		d="M396 4730.76H439.21L451.66999999999996 4711.05L407.53999999999996 4711Z"
+		fill="#2872f1"
+		transform="matrix(1,0,0,1,-384,-4673)"/>
+	<path
+		d="M396 4730.75L416.97 4711H407.5Z"
+		fill="#286cde"
+		fill-opacity="0.6"
+		transform="matrix(1,0,0,1,-384,-4673)"/>
+	<path
+		d="M451.56 4711.2L423 4703L427.7 4711.2Z"
+		fill="#edc537"
+		fill-opacity="0.6"
+		transform="matrix(1,0,0,1,-384,-4673)"/>
+	<path
+		d="M413.03 4701.5L406 4673L417.92 4693.67Z"
+		fill="#009557"
+		fill-opacity="0.7"
+		transform="matrix(1,0,0,1,-384,-4673)"/>
+</svg>

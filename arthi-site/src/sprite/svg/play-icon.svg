@@ -1,0 +1,12 @@
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:svgjs="http://svgjs.com/svgjs"
+	width="12"
+	height="18"
+	viewBox="0 0 12 18">
+	<path
+		d="M551.12 475.3L560.52 483C561.16 483.52 561.16 484.49 560.52 485.01L551.12 492.7C550.27 493.4 549 492.78999999999996 549 491.7V476.3C549 475.21000000000004 550.27 474.6 551.12 475.3"
+		transform="matrix(1,0,0,1,-549,-475)"/>
+</svg>

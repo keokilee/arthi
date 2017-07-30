@@ -1,0 +1,131 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+$color-abbey: #50555b;
+$color-alabaster: #f9f9f9;
+$color-alto: #ddd;
+$color-apple: #67b93c;
+$color-athens-gray: #f7f7f9;
+$color-black: #000;
+$color-boston-blue: #3582c1;
+$color-bottle-green: #0b3835;
+$color-boulder: #777;
+$color-boundera: #35383b;
+$color-cloud: #bdbcba;
+$color-cloudy: #a8a4a1;
+$color-concrete: #f2f2f2;
+$color-curious-blue: #358ed7;
+$color-flamingo: #ec5840;
+$color-gallery: #eee;
+$color-gray: #8a8a8a;
+$color-gray-jack: #404449;
+$color-gray-joe: #313336;
+$color-havelock-blue: #5aa8df;
+$color-heather: #c3cfd8;
+$color-hillary: #ab9a89;
+$color-japanese-laurel: #008000;
+$color-light-link-water: #f0f5fb;
+$color-link-water: #dfe9f4;
+$color-loblolly: #bdc6cf;
+$color-mako: #43484d;
+$color-mantis: #7dc855;
+$color-mantisas: #72b64e;
+$color-mercury: #e1e1e1;
+$color-mercuryc: #e5e6e8;
+$color-mine-shaft: #333;
+$color-mystic: #e1e8ee;
+$color-nevada: #6f7276;
+$color-nevadas: #dadcde;
+$color-nevadasas: #c5c7c9;
+$color-pelorous: #38a1c1;
+$color-persimmon: #ff585b;
+$color-persimmona: #dc2c2a;
+$color-persimmonak: #b92a28;
+$color-persimmonaka: #a52928;
+$color-persic: #f44;
+$color-perisic: #ff601f;
+$color-modric: #ff8757;
+$color-porcelain: #e7eaec;
+$color-regent-gray: #86939e;
+$color-scooter: #39add1;
+$color-scooters: #3399b9;
+$color-scoot: #349dbd;
+$color-scooterses: #2a7d97;
+$color-shamrock: #3adb76;
+$color-ship-cove: #838cc7;
+$color-shuttle-gray: #5e6977;
+$color-shitty-gray: #545e6b;
+$color-silver: #c1c1c1;
+$color-silver-chalice: #afafaf;
+$color-steel-blue: #4987b3;
+$color-sushi: #7ab949;
+$color-tradewind: #50b4ac;
+$color-trout: #525b64;
+$color-tuna: #3b3d40;
+$color-tunal: #d4d6d8;
+$color-white: #fff;
+$color-wild-sand: #f4f4f4;
+$color-yellow-sea: #ffae00;
+$color-blue-sky: #1779ba;
+$color-blue-breeze: #60b4cd;
+$color-black-jack: #211f1d;
+
+$colors-list: (
+	abbey: $color-abbey,
+	alabaster: $color-alabaster,
+	alto: $color-alto,
+	apple: $color-apple,
+	athens-gray: $color-athens-gray,
+	black: $color-black,
+	boston-blue: $color-boston-blue,
+	boulder: $color-boulder,
+	cloud: $color-cloud,
+	cloudy: $color-cloudy,
+	concrete: $color-concrete,
+	curious-blue: $color-curious-blue,
+	flamingo: $color-flamingo,
+	gallery: $color-gallery,
+	gray: $color-gray,
+	havelock-blue: $color-havelock-blue,
+	heather: $color-heather,
+	hillary: $color-hillary,
+	japanese-laurel: $color-japanese-laurel,
+	light-link-water: $color-light-link-water,
+	link-water: $color-link-water,
+	loblolly: $color-loblolly,
+	mako: $color-mako,
+	mantis: $color-mantis,
+	mercury: $color-mercury,
+	mine-shaft: $color-mine-shaft,
+	mystic: $color-mystic,
+	nevada: $color-nevada,
+	pelorous: $color-pelorous,
+	persimmon: $color-persimmon,
+	porcelain: $color-porcelain,
+	regent-gray: $color-regent-gray,
+	scooter: $color-scooter,
+	shamrock: $color-shamrock,
+	ship-cove: $color-ship-cove,
+	shuttle-gray: $color-shuttle-gray,
+	silver: $color-silver,
+	silver-chalice: $color-silver-chalice,
+	steel-blue: $color-steel-blue,
+	sushi: $color-sushi,
+	tradewind: $color-tradewind,
+	trout: $color-trout,
+	tuna: $color-tuna,
+	white: $color-white,
+	wild-sand: $color-wild-sand,
+	yellow-sea: $color-yellow-sea,
+);
+
+@each $key, $value in $colors-list {
+	.color-#{$key} {
+		color: $value !important;
+	}
+
+	.background-color-#{$key} {
+		background-color: $value !important;
+	}
+}
+
+// stylelint-enable

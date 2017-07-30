@@ -1,0 +1,22 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+	head(lang="en")
+		+title('User template')
+
+		include pug/metatags.pug
+		include pug/styles.pug
+	body
+		//- Page blocks
+
+		//- Components of page
+		include blocks/header-3/template.pug
+		//- include blocks/contents-14/template.pug
+		include blocks/custom-1/template.pug
+		include blocks/portfolio-2/template.pug
+		include blocks/team-2/template.pug
+		include blocks/footer-7/template.pug
+		include pug/scripts.pug
+		include pug/svg.pug

@@ -1,0 +1,499 @@
+body {
+	@include breakpoint(small) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding-right: rem-calc(map-get($grid-column-gutter, small));
+	padding-left: rem-calc(map-get($grid-column-gutter, small));
+
+	@include breakpoint(medium) {
+		padding-right: rem-calc(map-get($grid-column-gutter, medium)) / 2;
+		padding-left: rem-calc(map-get($grid-column-gutter, medium)) / 2;
+		max-width: $global-width + rem-calc(map-get($grid-column-gutter, medium));
+	}
+}
+
+.row {
+	@include row-zero-padding;
+}
+
+h1,
+.h1 {
+	@include breakpoint(small) {
+		font-weight: 300;
+		font-size: rem-calc(37);
+		line-height: rem-calc(44);
+		letter-spacing: -0.035em;
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(42);
+		line-height: rem-calc(50);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(48);
+		line-height: rem-calc(58);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(52);
+		line-height: rem-calc(58);
+	}
+}
+
+h2,
+.h2 {
+	@include breakpoint(small) {
+		font-weight: 300;
+		font-size: rem-calc(20);
+		line-height: rem-calc(30);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(24);
+		line-height: rem-calc(32);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(28);
+		line-height: rem-calc(36);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(32);
+		line-height: rem-calc(38);
+	}
+}
+
+h3,
+.h3 {
+	@include breakpoint(small) {
+		font-weight: 400;
+		font-size: rem-calc(18);
+		line-height: rem-calc(25);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(18);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(18);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(18);
+		line-height: rem-calc(25);
+	}
+}
+
+h4,
+.h4 {
+	@include breakpoint(small) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+}
+
+h5,
+.h5 {
+	@include breakpoint(small) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+}
+
+h6,
+.h6 {
+	@include breakpoint(small) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+}
+
+p,
+.p {
+	@include breakpoint(small) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+	}
+}
+
+.quote-1 {
+	@include breakpoint(small) {
+		font-weight: 300;
+		font-size: rem-calc(37);
+		line-height: rem-calc(44);
+		letter-spacing: -0.035em;
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(42);
+		line-height: rem-calc(50);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(48);
+		line-height: rem-calc(58);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(52);
+		line-height: rem-calc(65);
+	}
+}
+
+.quote-2 {
+	@include breakpoint(small) {
+		font-weight: 300;
+		font-size: rem-calc(25);
+		line-height: rem-calc(38);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(27);
+		line-height: rem-calc(40);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(32);
+		line-height: rem-calc(46);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(32);
+		line-height: rem-calc(46);
+	}
+}
+
+.tag-1 {
+	@include breakpoint(small) {
+		font-weight: 500;
+		font-size: rem-calc(18);
+		line-height: rem-calc(18);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(18);
+		line-height: rem-calc(18);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(18);
+		line-height: rem-calc(18);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(18);
+		line-height: rem-calc(18);
+	}
+}
+
+.tag-2 {
+	@include breakpoint(small) {
+		font-weight: 500;
+		font-size: rem-calc(14);
+		line-height: rem-calc(14);
+		letter-spacing: 0.093em;
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(14);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(14);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(14);
+	}
+}
+
+.subheading {
+	@include breakpoint(small) {
+		font-weight: 300;
+		font-size: rem-calc(16);
+		line-height: rem-calc(25);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(20);
+		line-height: rem-calc(30);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(22);
+		line-height: rem-calc(32);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(22);
+		line-height: rem-calc(32);
+	}
+}
+
+.caption {
+	@include breakpoint(small) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(19);
+
+		a {
+			&,
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(19);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(19);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(14);
+		line-height: rem-calc(19);
+	}
+}
+
+button,
+.button {
+	@include breakpoint(small) {
+		font-family: $main-font-family;
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+}
+
+input,
+.input,
+textarea,
+.textarea {
+	@include breakpoint(small) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);
+	}
+}
+
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+}
