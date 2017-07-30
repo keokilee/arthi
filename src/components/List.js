@@ -1,15 +1,30 @@
 import React from 'react'
+import styled from 'styled-components'
 
-export default (props) => {
-  if(!props) {
-    return ''
-  }
-  console.log(props.artists)
+
+
+const Li = styled.li`
+  color: red;
+`
+// props
+// aritsts, active
+export default ({artists, active}) => {
+
+  const Ul = styled.ul`
+    list-style-type: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(${active ? '0' : '100%'});
+    transition: transform 0.3s ease;
+  `
+  const list = artists.map(({first_name, last_name}) => {
+    return <Li>{ first_name } { last_name }</Li>
+  })
+
   return (
-    <ul>
-     {props.artists.forEach(({first_name, last_name}) =>
-       <li>{first_name} { last_name }</li>
-     )}
-    </ul>
+    <Ul>
+      { list }
+    </Ul>
   )
 }
